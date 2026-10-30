@@ -1,0 +1,19 @@
+{
+  "Nickname": "AND Armor Scanner",
+  "Visibility": "Visible",
+  "OneLineDescription": "Tags armor with Advanced Nudity Detection keywords from existing SLA_ keywords, gated by OCF child/uniform exclusions.",
+  "LongDescription": "Translates existing SLA_ (SexLab Aroused) keywords on armor into matching AND_ (Advanced Nudity Detection) keywords via a slot-aware mapping table, leaving the original SLA_ keyword in place so the armor ends up carrying both. OCF (Object Categorization Framework) keywords are used only as a safety gate, not as a mapping source: armor tagged as OCF child clothing or quest/uniform disguises is skipped entirely regardless of any SLA_ keyword it carries. Armor flagged OCF_ArmorMainSkimpy that still ends up with no AND_/SLA_ coverage is listed at the end of the run as a candidate for the companion KID backup file.",
+  "PreferredAutoVersioning": "Default",
+  "RequiredMods": [
+    "Advanced Nudity Detection.esp",
+    "Dragonborn.esm",
+    "HearthFires.esm",
+    "Skyrim.esm",
+    "Update.esm"
+  ],
+  "TargetedReleases": [
+    "SkyrimSE",
+    "SkyrimVR",
+    "SkyrimSEGog"
+  ]
+}
